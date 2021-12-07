@@ -41,13 +41,13 @@ round-avatar: true
 social-network-links:
 # rss: true  # remove this line if you don't want to show an RSS link at the bottom
 # facebook: deanattali
-  github: arthurbrousse
+github: arthurbrousse
 # twitter: daattali
 # patreon: DeanAttali
 # youtube: c/daattali
 # medium: yourname
 # reddit: yourname
-# linkedin: daattali
+linkedin: benjamin-louis-a88791222
 # xing: yourname
 # stackoverflow: "3943160/daattali"
 # snapchat: deanat78
@@ -57,7 +57,7 @@ social-network-links:
 # steam: deanat78
 # twitch: yourname
 # yelp: yourname
-  telegram: arthurbrousse
+# telegram: arthurbrousse
 # calendly: yourname
 # mastodon: instance.url/@username
 # ORCID: your ORCID ID
@@ -100,7 +100,7 @@ post_search: true
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#FF0000"
+navbar-col: "#A52A2A"
 navbar-text-col: "#FFFFFF"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
