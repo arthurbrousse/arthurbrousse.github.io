@@ -9,18 +9,26 @@ Everyone not living in a cave for the whole twentieth century is a witness of gl
 To answer these questions, we have been provided with a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is _an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020._ This dataset will allow us to gather informations about what people have thought about the topic of electric cars versus thermic cars in a ten year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2010 up until now. 
 
 {: .box-note}
-U.S. Department of Energy : "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
+**U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
 
 After taking this decision in 2009, partly in reaction to the price of the gallon of oil averaging 4$, president Obama set the goal for the U.S. to be the first country to have one million electric vehicles on the roads by 2015. This illustrates the fact that work needed to be done in the U.S. to make electric cars "look cool", in a country that is well known for its relish of "conventional" internal combustion engine vehicles. The cliché of the big American truck surely has a groundtruth somewhere...
 
-# Introduction :
-This story aims to present the evolution of the perception of plug-in electric vehicles in the United States in the recent years, 
-Using these quotes, we will analyze what different groups of population think of this difference in the engines of their cars, how what they think is correlated with other factors such as their wealth, gender, geographic location, political orientation, ethnicity, and many others. We will pay particular attention to what makes people have a good opinion on plug-in electric vehicles, and what makes them have a bad opinion. We will conduct the analysis by studying mainly two main cases, namely the rise of Tesla Inc. since its creation in 2003, and the resilience in the car market shown by historical manufacturer such as Chevrolet. We will see what has happened during specific events, such as the release of the Tesla Model 3 (which is to this day the most sold plug-in eletric car in the world) in the summer of 2017, and other launches such as the one of the Chevrolet Silverado, which was the second most-sold car in the US in 2017. 
+## How things stand in the early 2010's :
+Quelques commentaires, ou bien si on a vraiment rien, on parle seulement de l'état des choses général avant la sortie de la model 3, et pas à partir de 2010.
+
+## The Tesla Model 3
+Tesla was founded in July 2003 as Tesla Motors, the name being in honor of Nikola Tesla. Elon Musk became the largest shareholder of the company when he made an investment of 6.5 million USD in February 2004, and he has served as CEO of the company since 2008. Tesla had been producing the Model S since 2012, but the sales numbers of this car have never risen enough to play a significant role on the vehicles market in the US (aorund 200'000 units sold by the end of 2017). The Model 3 was marketed as being more affordable to more people than previous models by Tesla. 
+
+Des ptits graphes, des ptits plots...
+
+## Big fuss for Tesla, big numbers for conventional engines
+If you care to venture a guess, try to find the most sold car in the United States in 2017, the year of the release of the Model 3. Well, the first three spots are taken by fueled-powered trucks by Ford, Chevrolet and GMC. Since everybody in the US is named Ford, we cannot conduct a relevant analysis with that name, so we focus ourselves on the second most sold car in 2017, the Chevrolet Silverado.
+
+Des ptits graphs, des ptits plots...
+
+## How things stand now
+
+## In a nutshell...
+lé zaméricain y conduise dé gros voitur et muske il é maran mdr
 
 
-
-# Header size 1
-## Header size 2
-### Header size 3
-#### Header size 4
-##### Header size 5
