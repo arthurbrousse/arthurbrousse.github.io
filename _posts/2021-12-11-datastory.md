@@ -19,14 +19,15 @@ Quelques commentaires, ou bien si on a vraiment rien, on parle seulement de l'é
 ## The Tesla Model 3
 Tesla was founded in July 2003 as Tesla Motors, the name being in honor of Nikola Tesla. Elon Musk became the largest shareholder of the company when he made an investment of 6.5 million USD in February 2004, and he has served as CEO of the company since 2008. Tesla had been producing the Model S since 2012, but the sales numbers of this car have never risen enough to play a significant role on the vehicles market in the US (aorund 200'000 units sold by the end of 2017). The Model 3 was marketed as being more affordable to more people than previous models by Tesla. 
 
-Des ptits graphes, des ptits plots...
+_Des ptits graphs, des ptits plots..._
 
 ## Big fuss for Tesla, big numbers for conventional engines
 If you care to venture a guess, try to find the most sold car in the United States in 2017, the year of the release of the Model 3. Well, the first three spots are taken by fueled-powered trucks by Ford, Chevrolet and GMC. Since everybody in the US is named Ford, we cannot conduct a relevant analysis with that name, so we focus ourselves on the second most sold car in 2017, the Chevrolet Silverado.
 
-Des ptits graphs, des ptits plots...
+_Des ptits graphs, des ptits plots..._
 
 ## How things stand now
+_Des ptits graphs, des ptits plots..._
 
 ## In a nutshell...
 lé zaméricain y conduise dé gros voitur et muske il é maran mdr
