@@ -14,6 +14,7 @@ author: Benjamin Louis, Tatiana Cogne, Bastien Golomer, Arthur Brousse
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  The Datastory : "https://arthurbrousse.github.io/2021-12-11-datastory/"
   Source Code : "https://github.com/epfl-ada/ada-2021-project-les-quatre-neurones"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
