@@ -14,11 +14,11 @@ author: Benjamin Louis, Tatiana Cogne, Bastien Golomer, Arthur Brousse
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Us: "aboutme"
+  Source Code : https://github.com/epfl-ada/ada-2021-project-les-quatre-neurones
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://dlab.epfl.ch/teaching/fall2021/cs401/"
+  Motivation : "https://dlab.epfl.ch/teaching/fall2021/cs401/"
 
 # --- Logo --- #
 
