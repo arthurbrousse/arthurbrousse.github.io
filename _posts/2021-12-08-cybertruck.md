@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: The cybertruck project
 subtitle: Wtf is dat
 cover-img: /assets/img/path.jpg
