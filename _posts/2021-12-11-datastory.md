@@ -2,11 +2,16 @@
 layout: post
 title: The battle of electricity versus fossil fuels
 subtitle: Discover the analysis 
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-tags: [books, test]
 ---
+
+Everyone not living in a cave for the whole twentieth century is a witness of global warming. Everyone knows that transportation of goods and of people is one of the causes of global warming, and is therefore a field with room for improvement. Naturally, technology is nowadays coming to the rescue, designing new cars that run on electricity and not on conventional fuel. How efficient is this, and mostly, what effects does it have on people ? What does the population think of this new generation of vehicles, that seems to have gotten so much hype in the last decade ?
+
+We study these questions below, by addressing several analyses. 
+
+
+The dataset we study is [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is _an open corpus of 178 million quotations
+attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020._ 
+
 
 # Introduction :
 This story aims to present the evolution of the perception of plug-in eletric vehicles in the United States in the recent years, in a country that is well known for its relish of "conventional" internal combustion engine vehicles. This study will be conducted with the help of the dataset "Quotebank", which is an agglomerate of quotes taken from newspapers. Each quote comes with a most likely speaker, attributed by an algorithm.
