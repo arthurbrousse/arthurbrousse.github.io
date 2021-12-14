@@ -16,11 +16,37 @@ After taking this decision in 2009, partly in reaction to the price of the gallo
 ## How things stand in the early 2010's :
 Quelques commentaires, ou bien si on a vraiment rien, on parle seulement de l'état des choses général avant la sortie de la model 3, et pas à partir de 2010.
 
+## What is the question 
+
 Now, to try and measure the evolution of the opinion on electric cars and thermal cars we estimed that we could compare the two leaders in the domain: Tesla and Chevrolet. We chose Chevrolet as it is one of the most sold car overall and has a standard similar to Tesla, being quite mass market but not necessarily oriented towards low-cost vehicles. 
 
 The big advantage of words, is that they convey much emotions therefore using these quotes, we can build an overview of what image each brand has by measuring their sentiment. This is done using Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER) which, in a nutshell, has values associated to words, more or less positive depending on their meaning, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method that analyses the emotion of the sentence and BERT, a sentiment analysis Deep Neural Network.
 
 ![Overall Chevrolet Plot](/assets/chevrolet_general.html)
+![Overall Tesla Plot](/assets/tesla_general.html)
+
+Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices.  
+{% include /assets/chevrolet_general.html %} 
+
+
+We have 
+
+## What are they talking about ? 
+
+Now, we have analysed the emotions, but another question of interest is, what exactly is everyone talking about during this time ? We can try to detect what the main subject is throughout the years, what is everyone talking about when reffering to Tesla or Chevrolet. We know that over the years, and especially for car companies which release new models frequently, what people are saying about their brand changes: A good car, and everyone is happy, a leaked scandal that reveals the company has been faking its CO2 emissions, now everyone's not so happy. 
+
+Here are the main thing people are saying:
+
+
+
+## What has happened and what changed ?
+
+## Who is doing the talking ? 
+
+Now, we have differences, but there might be an important variable, where do everyone that's speaking coming from ? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a more traditional company like Chevrolet. To accomplish this, a great ressource we can take advantage of if the imformation contained by the "occupation" field in the wikidata dumps. Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging we can find their occupation.
+
+
+Now, clealy, we can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: The latter is much more engrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is engrained in people's mind as a novel technology that has still to prove itself. 
 
 ## An overview of the opinion
 
