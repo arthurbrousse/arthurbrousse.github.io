@@ -22,6 +22,12 @@ Now, to try and measure the evolution of the opinion on electric cars and therma
 
 The big advantage of words, is that they convey much emotions therefore using these quotes, we can build an overview of what image each brand has by measuring their sentiment. This is done using Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER) which, in a nutshell, has values associated to words, more or less positive depending on their meaning, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method that analyses the emotion of the sentence and BERT, a sentiment analysis Deep Neural Network.
 
+{% include chevrolet_general.html %}
+
+<p align="center">
+   <img src="/assets/images/hackerman.jpeg" width="50%"/>
+</p>
+
 ![Overall Chevrolet Plot](/assets/chevrolet_general.html)
 
 Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices.  
