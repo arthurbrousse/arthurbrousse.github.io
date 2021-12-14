@@ -16,6 +16,16 @@ After taking this decision in 2009, partly in reaction to the price of the gallo
 ## How things stand in the early 2010's :
 Quelques commentaires, ou bien si on a vraiment rien, on parle seulement de l'état des choses général avant la sortie de la model 3, et pas à partir de 2010.
 
+Now, to try and measure the evolution of the opinion on electric cars and thermal cars we estimed that we could compare the two leaders in the domain: Tesla and Chevrolet. We chose Chevrolet as it is one of the most sold car overall and has a standard similar to Tesla, being quite mass market but not necessarily oriented towards low-cost vehicles. 
+
+The big advantage of words, is that they convey much emotions therefore using these quotes, we can build an overview of what image each brand has by measuring their sentiment. This is done using Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER) which, in a nutshell, has values associated to words, more or less positive depending on their meaning, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method that analyses the emotion of the sentence and BERT, a sentiment analysis Deep Neural Network.
+
+![Overall Chevrolet Plot](/assets/chevrolet_general.html)
+
+## An overview of the opinion
+
+Thanks to the Quotebank dataset, we were able to extract much information
+
 ## The Tesla Model 3
 Tesla was founded in July 2003 as Tesla Motors, the name being in honor of Nikola Tesla. Elon Musk became the largest shareholder of the company when he made an investment of 6.5 million USD in February 2004, and he has served as CEO of the company since 2008. Tesla had been producing the Model S since 2012, but the sales numbers of this car have never risen enough to play a significant role on the vehicles market in the US (aorund 200'000 units sold by the end of 2017). The Model 3 was marketed as being more affordable to more people than previous models by Tesla. 
 
