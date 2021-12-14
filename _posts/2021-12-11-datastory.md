@@ -25,8 +25,6 @@ The big advantage of words, is that they convey much emotions therefore using th
 ![Overall Chevrolet Plot](/assets/chevrolet_general.html)
 
 Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices.  
-{% include /assets/chevrolet_general.html %} 
-
 
 We have 
 
