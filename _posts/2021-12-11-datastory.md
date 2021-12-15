@@ -6,7 +6,7 @@ subtitle: Discover the analysis
 
 Everyone not living in a cave for the whole twentieth century is a witness of global warming. Everyone knows that transportation of goods and of people is one of the causes of global warming, and is therefore a field with room for improvement. Naturally, technology is nowadays coming to the rescue, designing new cars that run on electricity, and not on conventional fuel. How efficient is this, and mostly, what effects does it have on people ? What does the population think of this new generation of vehicles, that seems to have gotten so much hype in the last decade ? 
 
-To answer these questions, we have been provided with a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is _an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020._ This dataset will allow us to gather informations about what people have thought about the topic of electric cars versus thermic cars in a ten year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2010 up until now. 
+To answer these questions, we have been provided with a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is _an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020._ This dataset will allow us to gather informations about what people have thought about the topic of electric cars versus thermic cars in a ten year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2015 up until now. 
 
 {: .box-note}
 **U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
@@ -18,9 +18,9 @@ Quelques commentaires, ou bien si on a vraiment rien, on parle seulement de l'é
 
 ## What is the question 
 
-Now, to try and measure the evolution of the opinion on electric cars and thermal cars we estimed that we could compare the two leaders in the domain: Tesla and Chevrolet. We chose Chevrolet as it is one of the most sold car overall and has a standard similar to Tesla, being quite mass market but not necessarily oriented towards low-cost vehicles. 
+Now, to try and measure the evolution of the opinion on electric cars and thermal cars we estimed that we could compare two leaders in the domain: Tesla and Chevrolet. We chose Chevrolet as it is one of the most succesful and best-selling car brands in the U.S. and has a standard similar to Tesla, being quite mass market but not necessarily oriented towards low-cost vehicles. 
 
-The big advantage of words, is that they convey much emotions therefore using these quotes, we can build an overview of what image each brand has by measuring their sentiment. This is done using Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER) which, in a nutshell, has values associated to words, more or less positive depending on their meaning, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method that analyses the emotion of the sentence and BERT, a sentiment analysis Deep Neural Network.
+The big advantage of words, is that they convey much emotions. Therefore from the quotes in the dataset, we can build a first overview of what image each brand has had in the past years by assessing the average sentiment in the quotes. After selecting a sample of quotes which share characteristic keywords (e.g. brand names, car models) and checking the uniqueness of each quote, we proceed to a Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER). In a nutshell, this algorithm associates values to words depending on their meaning and the emotion they convey, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method that analyses the emotion **GIVE NAME** of the sentence and BERT, a sentiment analysis Deep Neural Network.
 
 Maitenant que nous avons sélectionné les quotes qui parlent de Chevrolet et de Tesla, calculé les sentiments qui en ressortent, il est de temps d'analyser nos résultats. Pour se faire nous allons dans un premier temps montrer la moyenne des sentiments par mois ainsi que le notre de quotes entre Janvier 2015 et Décembre 2020.  
 
@@ -34,7 +34,36 @@ Maintenat pour Tesla, on voit qu'il y a aussi peut de quotes en début 2016 et f
 
 Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices.  
 
-We have 
+## Topic Analysis
+
+After this overview of the general sentiment on each brand over the years, let us come back to our main concern : how are people's views on the brand influenced by events linked to said brands ? This analysis requires to select appropriate events and discuss them on a pertinent timeframe.
+
+At first, the step of event selection was done by hand, reading through the history of each brand and evalutating which events seemed like milestones and would easily show up in the quotes. However, this method can not lead to the most accurate results. Indeed, despite the rather huge size of the quotebanks dataset, it doesn't contain complete information about any event about any topic happening in the world. This implies that the event that we manuallly selected might be missing. 
+
+Another approach which is more tailored to the data we have at disposal is topic detection. With its barabaric name, the "Latend Dirichlet Allocation" algorithm is able to identify which words in a batch of quotes are the most likely to accurately represent what topics these quotes cover. The brand names were ignored in this process, as they appeared in every quote in our batches due to our selection process as indicated above. 
+
+
+### Words and Company Profile
+A first iteration taking all the quotes into account for each brand revealed some predominant words. In the case of Chevrolet, the word **"good"** is central. This could explain the higher VADER score presented earlier and be a **general bias term**. Another central term is **"race"**. These two words are the two main representatives of this brand.
+
+2 WORD CLOUDS TODO : 1 WITH WORDS, 1 WITHOUT
+
+The same first iteration is applied to the quotes related to Tesla.  GIVE THE WORDS
+2 WORD CLOUDS TODO : 1 WITH WORDS, 1 WITHOUT
+
+DRAW CONCLUSION ON THE PROFILE OF THE COMPANIES
+
+### Name now one man
+
+Now we have an intuition of the topics related to each brand, the analysis is push further by reducing the batches of quotes, grouping them by year and month. This step, along with discarding the main words cited earlier, allowed to have a more precise view on which topics characterise the brands through time. Some words are frequent and appear uniformly throughout the months and constitute a kind of background noise. On the opposite, we can find specific terms which appear punctually in the timeline, thus indicating a special event occured. Topics detected are (GIVE DATES): 
+- Tesla
+  - Model X
+  - Cybertruck
+- Chevrolet
+  -  New camaro model 
+  -  New Silverado model (selected as keyword in the quote selection process)
+
+
 
 ## What are they talking about ? 
 
