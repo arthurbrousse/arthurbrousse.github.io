@@ -38,7 +38,8 @@ We have
 
 ## What are they talking about ? 
 
-Now, we have analysed the emotions, but another question of interest is, what exactly is everyone talking about during this time ? We can try to detect what the main subject is throughout the years, what is everyone talking about when reffering to Tesla or Chevrolet. We know that over the years, and especially for car companies which release new models frequently, what people are saying about their brand changes: A good car, and everyone is happy, a leaked scandal that reveals the company has been faking its CO2 emissions, now everyone's not so happy. 
+Now this is all fine and dandy, but during our intial topic analysis, something stood out that deserves attention: Who exactly is doing the talking ? Are the people talking about Tesla the same ones that talk about  where do everyone that's speaking coming from ? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a 100 year old company like Chevrolet. To accomplish this, a great ressource we can take advantage of if the information contained by the "occupation" field in the wikidata dumps. Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging we can find their occupation(s).
+
 
 Maintenant que nous avons regardé en général, les sentiments qui ressortent des quotes, nous allons nous concentrer sur deux événements relié à Tesla et deux événements relié à Chevrolet. Pour se faire, nous avons fait du topic detection en regroupant les phrases par mois. Pour voir si une différence de sentiments avait lieu entre avant, pendant et après un événements nous avons décidé d'utiliser des boxplots. En effet, ils nous permettent de résumer et visualiser les distributions plus facilement. Pour la période nous avons décidé de prendre 20 jours pour chacune d'entre elles et pour celle pendant, avec la date de l'événement au centre. Vu que le nombre de quotes est plus bas en 2016 et en 2017 nous avons préféré selectionner des événements qui ne sont pas dans ces années.  
 
@@ -78,6 +79,12 @@ Now, we have differences, but there might be an important variable, where do eve
 {% include piechart_occupation.html %}
 
 Now, clealy, we can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: The latter is much more engrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is engrained in people's mind as a novel technology that has still to prove itself. 
+
+We have an example of the power of large scale data and what it can tell us. It is quite known now, that people tend to accomodate their behavior and opinion to the ones of recognized or influential people. 
+- Telsa, while still being quite a new company whith mixed feeling about it, has an aura of innovation and novelty around it which might sound promising for its future.
+- Chevrolet on the other hand, has the advantage of being associated to race cars and the sentiment of freedom and adrenalin. 
+
+Interestingly enough we found in the end very few mentions of the environmental stakes of that lies in this discussion. Once again there might be several factors underlying this, maybe because this got even more launched at the front of the stage with the worldwilde halt caused by Coronavirus which gave everyone time to reflect how much screwed we actually were. Do the mode of transportation we take have an impact in this fight ? Most likely, but our analysis with Quotebank tells us that it is defenitely not at the heart of what has been extracted. 
 
 ## An overview of the opinion
 
