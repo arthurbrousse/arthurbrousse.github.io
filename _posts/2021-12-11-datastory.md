@@ -22,13 +22,9 @@ Now, to try and measure the evolution of the opinion on electric cars and therma
 
 The big advantage of words, is that they convey much emotions therefore using these quotes, we can build an overview of what image each brand has by measuring their sentiment. This is done using Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER) which, in a nutshell, has values associated to words, more or less positive depending on their meaning, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method that analyses the emotion of the sentence and BERT, a sentiment analysis Deep Neural Network.
 
-{% include chevrolet_general.html %}
+{% include chevy_overall.html %}
 
-<p align="center">
-   <img src="/assets/images/hackerman.jpeg" width="50%"/>
-</p>
-
-![Overall Chevrolet Plot](/assets/chevrolet_general.html)
+{% include tesla_overall.html %}
 
 Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices.  
 
@@ -40,14 +36,27 @@ Now, we have analysed the emotions, but another question of interest is, what ex
 
 Here are the main thing people are saying:
 
+## The Tesla Model X
 
+{% include boxplot_modelx.html %}
 
-## What has happened and what changed ?
+## The 6th Edition Chervrolet Camaro
+
+{% include boxplot_camaro.html %}
+
+## The Chevrolet Silverado
+
+{% include boxplot_silverado.html %}
+
+## The Cybertruck 
+
+{% include boxplot_cybertruck.html %}
 
 ## Who is doing the talking ? 
 
 Now, we have differences, but there might be an important variable, where do everyone that's speaking coming from ? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a more traditional company like Chevrolet. To accomplish this, a great ressource we can take advantage of if the imformation contained by the "occupation" field in the wikidata dumps. Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging we can find their occupation.
 
+{% include piechart_occupation.html %}
 
 Now, clealy, we can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: The latter is much more engrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is engrained in people's mind as a novel technology that has still to prove itself. 
 
