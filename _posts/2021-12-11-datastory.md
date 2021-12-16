@@ -8,9 +8,9 @@ In the past few years, the topic of global warming has become central in public 
 
 ![electric_combustion](/assets/img/gas-vs-electric.png)
 
-<p style="text-align: center;">
+
 To answer these questions, we studied a subset of a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million news articles (almost entirely in English) published between 2008 and 2020. Although these quotes do not gather information about the “common people”, we know that people take interest and value the opinion of influential figures[^1], therefore the opinions conveyed in these quotes approached how people view these different options. This dataset will allow us to gather information about what people have thought about the topic of electric cars versus thermic cars in a ten-year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2015 up until now.
-</p>
+
  
 [^1]:  https://www.tandfonline.com/doi/full/10.1080/21670811.2018.1423625 
 
@@ -19,7 +19,7 @@ One of the first milestones of electric car development was this announcement th
 {: .box-note}
 **U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
 
-After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles driving American roads by 2015. This illustrates a growing will to find and use alternatives to combustion engines yet innovation needs quite a starting boost, especially in this case in a country that is well known for its relish of "conventional" internal combustion engine vehicles[^2][^3]. But maybe the cliché of the big American truck has a ground truth somewhere...
+After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles driving American roads by 2015. This illustrates a growing will to find and use alternatives to combustion engines yet innovation needs quite a starting boost, especially in this case in a country that is well known for its relish of "conventional" internal combustion engine vehicles[^2] [^3]. But maybe the cliché of the big American truck has a ground truth somewhere...
 
 [^2] : https://www.youtube.com/watch?v=2Uneti_gkIw
 [^3] : https://www.youtube.com/watch?v=5XcW4nxqDmw
@@ -126,7 +126,9 @@ Now, this is all fine and dandy, but during our initial topic analysis, somethin
 
 {% include piechart_occupation.html %}
 
-Clearly, we can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: the latter is much more ingrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is branded in people's minds as a novel technology that still needs to prove itself. This comforts our conclusions drawn from the topic analysis.
+Clearly, we can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: the latter is much more ingrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is branded in people's minds as a novel technology that still needs to prove itself, which actually has been shown in recent surveys [^5]. This comforts our conclusions drawn from the topic analysis.
+
+[^5]: https://www.jdpower.com/business/press-releases/2020-q1-mobility-confidence-index-study-fueled-surveymonkey-audience
 
 We have an example of the power of large scale data and what it can tell us. It is quite known now, that people tend to accommodate their behavior and opinion to the ones of recognized or influential people. 
 - Telsa, while still being quite a new company with mixed feelings about it, has an aura of innovation and novelty around it which might sound promising for its future.
