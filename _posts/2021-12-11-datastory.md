@@ -4,39 +4,42 @@ title: The battle of electricity versus fossil fuels
 subtitle: Discover the analysis 
 ---
 
-If you’ve connected to the Web at least once in the last few years, you know what is global warming and what’s awainting us. Among the many facets of this problem, a stake that gets the interest of many people is transportation, of goods and of people. Naturally, technology is nowadays alledgedly coming to the rescue, designing new cars that run on electricity, and not on conventional fuel. Now, whether or not it is a solution to our problems is beyond the scope of what we will see, but let’s assume it is, what exctly does the population think of this new generation of vehicles, that seems to have gotten so much hype in the last decade ? How did the opinion change whithin therese five years, especially around important events for both these companies ?
+In the past few years, the topic of global warming has become central in public debate, raising political, social and economical questions. Among the many facets of this problem, a stake that gets the interest of many is transportation, of goods and people. Naturally, technology is nowadays allegedly coming to the rescue. Brands are designing new cars that run on electricity, and not on conventional fossil fuel. Now, whether or not this is a solution to our problems is beyond the scope of what we will see, but let’s assume it is, what exactly does the general public think of this new generation of vehicles, that seems to have gotten so much hype in the last decade? Did the opinion change, and if so why? 
 
 ![electric_combustion](/assets/img/gas-vs-electric.png)
 
 <p style="text-align: center;">
-To answer these questions, we have been provided with a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020. Although these quotes do not gather information about the “common people”, we know that people take interest and value the opinion of influential figures[^1], therefore the opinions conveyed in these quotes can give an idea of how people view theses different options. This dataset will allow us to gather informations about what people have thought about the topic of electric cars versus thermic cars in a ten year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2015 up until now.
+To answer these questions, we studied a subset of a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million news articles (almost entirely in English) published between 2008 and 2020. Although these quotes do not gather information about the “common people”, we know that people take interest and value the opinion of influential figures[^1], therefore the opinions conveyed in these quotes approached how people view these different options. This dataset will allow us to gather information about what people have thought about the topic of electric cars versus thermic cars in a ten-year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2015 up until now.
 </p>
  
 [^1]:  https://www.tandfonline.com/doi/full/10.1080/21670811.2018.1423625 
 
-One of the first milestones of electric car devellopement was this announcement that occured in 2009:
+One of the first milestones of electric car development was this announcement that occurred in 2009:
 
 {: .box-note}
 **U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
 
-After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, president Obama set the goal for the U.S. to be the first country to have one million electric vehicles on the roads by 2015. This illustrates a growing will to use alternatives to combustion engines and still needed quite a starting boost, especially in this case in a country that is well known for its relish of "conventional" internal combustion engine vehicles. But maybe the cliché of the big American truck has a groundtruth somewhere...
+After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles driving American roads by 2015. This illustrates a growing will to find and use alternatives to combustion engines yet innovation needs quite a starting boost, especially in this case in a country that is well known for its relish of "conventional" internal combustion engine vehicles[^2][^3]. But maybe the cliché of the big American truck has a ground truth somewhere...
+
+[^2] : https://www.youtube.com/watch?v=2Uneti_gkIw
+[^3] : https://www.youtube.com/watch?v=5XcW4nxqDmw
 
 
-## How is everyone feeling ? 
+## How is everyone feeling? 
 
-Now, to try and measure the evolution of the opinion on electric cars and thermal cars we estimed that we could compare two leaders in the domain: Tesla and Chevrolet. Chevrolet as it is one of the most succesful and best-selling car brands in the world[^2], especially in the US from which most of our speakers come from, and in average makes cars of a similar price range to Tesla, not being completely unaffordable but definitely not oriented towards low-cost vehicles. 
+To try and measure the evolution of the opinion on electric cars and thermal cars, a first-order approximation is to compare two leaders in the domain: Tesla and Chevrolet. Chevrolet as it is one of the most successful and best-selling car brands in the world[^4], especially in the US from which most of our speakers come from, and in average makes cars of a similar price range to Tesla, not being completely unaffordable but definitely not oriented towards low-cost vehicles.
 
-[^2]: https://www.goodcarbadcar.net/chevrolet-us-sales-figures/
+[^4]: https://www.goodcarbadcar.net/chevrolet-us-sales-figures/
 
-The big advantage of words, is that they convey emotions. Therefore from the quotes in the dataset, we can build a first overview of what image each brand has had in the past years by assessing the average sentiment in the quotes. After selecting a sample of quotes which share characteristic keywords (e.g. brand names, car models) and checking the uniqueness of each quote, we proceed to a Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER). In a nutshell, this algorithm associates values to words depending on their meaning and the emotion they convey, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method, text2emotion, that analyses the emoti of the sentence and BERT, a sentiment analysis Deep Neural Network.
+This is where our quotes dataset comes into play. The big advantage of words is that they convey emotions. Therefore from the quotes, we can build a first overview of what image each brand has had in the past years by assessing the average sentiment in the quotes. After selecting a sample of quotes that share characteristic keywords (e.g. brand names, car models) and checking the uniqueness of each quote, we proceed to a Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionary sEntiment Reasoning (VADER). In a nutshell, this algorithm associates values to words depending on their meaning and the emotion they convey and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up by a similar method, text2emotion, which analyses the emotion of the sentence, and BERT, a sentiment analysis Deep Neural Network.
 
-We have data spanning 5 years in total, between January 2015 and December 2020, so why not taking advantage of it and looking at both the number of quotes over time and the average sentiment score with its corresponding standard deviation conveyed by our quotes talking about Chevrolet and Tesla. The goal being to see if in this 5 year timespan the public opinion changed regarding either of these brands.
+We have data spanning 5 years in total, between January 2015 and April 2020, so why not take advantage of it and look at both the number of quotes over time and the average sentiment score with its corresponding standard deviation conveyed by our quotes talking about Chevrolet and Tesla. The goal is to see if in this 5-year timespan the public opinion changed regarding either of these brands.
 
 {% include general_chevrolet.html %}
 
-An information that jumps to our eye is how the number of quotes varies, but especially if we compare January 2016, December 2016,  even January 2017 which has almost no quotes. The average sentiment per month is overall around 0.5, and mostly very stable except when the number of quotes is low. The third plot shows us the standard deviation also per month. Contrary to what one would expect, it oscillates a lot. 
+A piece of information that jumps to our eye in the chart above is how the number of quotes varies, especially if we compare January 2016, December 2016,  even January 2017 which has almost no quotes. The average sentiment per month is overall around 0.5, and mostly very stable except when the number of quotes is low. The third plot shows us the standard deviation also per month. Contrary to what one would expect, it oscillates a lot. **SO WHAT**
 
-Before processing the quotes for Tesla, it is important to note that the quotes coming from its esteemed founder, Elon Musk, with 24% of the quotes. Nonetheless we decided that he was worth keeping, even if he might be skewed in favor of Telsa, as we are looking at how what influential figures are saying 
+Before processing the quotes for Tesla, it is important to note that the quotes coming from its esteemed founder, Elon Musk, account for 24% of the selected quotes. Nonetheless, we decided that he was worth keeping, even if he might be skewed in favor of Telsa, as we are looking at how what influential figures are saying.
 
 {% include general_tesla.html %}
 
