@@ -42,8 +42,8 @@ Another approach which is more tailored to the data we have at disposal is topic
 ### Words and Company Profile
 A first iteration taking all the quotes into account for each brand revealed some predominant words. Here are the wordclouds representative of the words selected for topic analysis over the years. 
 
-[tesla_cloud.png](/assets/tesla_cloud.png)
-[chevy_cloud.png](/assets/chevy_cloud.png)
+![image](/assets/tesla_cloud.png)
+![image](/assets/chevy_cloud.png)
 
  In the case of Chevrolet, it is first worth noticing the word **"good"** is central. This could explain the higher VADER score presented earlier, as it constitutes a **general bias term**. Other central terms are **"race"**, **”track”** and **”teams”**, which picture Chevrolet as a brand invested in car racing (namely NASCAR). Several car models are identified as well. From this analysis, we can put the image of Chevrolet into words : a brand oriented towards racing and with a friendly face (“good” and “weekend”).
 
