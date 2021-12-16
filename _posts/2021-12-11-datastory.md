@@ -33,34 +33,38 @@ We can notice that for Chevrolet, the number of quotes varies, but especially th
 Now for Tesla, we see that there are also few quotes in early 2016 and late 2016/early 2017. One would think that the QuoteBank dataset might have less data for this period. We notice that unlike Chevrolet, the number of quotes increases significantly after 2017. We also found that in our selected quotes, 24% are quotes from Elon Musk, the creator of Tesla. Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices. We finally notice that the standard deviation is much more stable in Tesla's quotes compared to Chevrolet's.
 
 ## Topic Analysis
-
-After this overview of the general sentiment on each brand over the years, let us come back to our main concern : how are people's views on the brand influenced by events linked to said brands ? This analysis requires to select appropriate events and discuss them on a pertinent timeframe.
-
-At first, the step of event selection was done by hand, reading through the history of each brand and evalutating which events seemed like milestones and would easily show up in the quotes. However, this method can not lead to the most accurate results. Indeed, despite the rather huge size of the quotebanks dataset, it doesn't contain complete information about any event about any topic happening in the world. This implies that the event that we manuallly selected might be missing. 
-
-Another approach which is more tailored to the data we have at disposal is topic detection. With its barabaric name, the "Latend Dirichlet Allocation" algorithm is able to identify which words in a batch of quotes are the most likely to accurately represent what topics these quotes cover. The brand names were ignored in this process, as they appeared in every quote in our batches due to our selection process as indicated above. 
-
-
+After this overview of the general sentiment on each brand over the years, let us come back to our main concern: how are people's views on the brand influenced by events linked to said brands? This analysis requires to select appropriate events and discuss them on a pertinent timeframe.
+ 
+At first, the step of event selection was done by hand, reading through the history of each brand, and evaluating which events seemed like milestones and would easily show up in the quotes. However, this method can not lead to the most accurate results. Indeed, despite the rather huge size of the quotebanks dataset, it doesn't contain complete information about any event about any topic happening in the world. This implies that the event that we manually selected might be missing.
+ 
+Another approach which is more tailored to the data we have at disposal is topic detection. With its barbaric name, the "Latent Dirichlet Allocation" algorithm can identify which words in a batch of quotes are the most likely to accurately represent what topics these quotes cover. We decided to detect the topics for each month of the 6 years studied (2015-2020). The brand names were ignored in this process, as they appeared in every quote in our batches due to our selection process.
+ 
 ### Words and Company Profile
-A first iteration taking all the quotes into account for each brand revealed some predominant words. In the case of Chevrolet, the word **"good"** is central. This could explain the higher VADER score presented earlier and be a **general bias term**. Another central term is **"race"**. These two words are the two main representatives of this brand.
+A first iteration taking all the quotes into account for each brand revealed some predominant words. Here are the wordclouds representative of the words selected for topic analysis over the years. 
 
-2 WORD CLOUDS TODO : 1 WITH WORDS, 1 WITHOUT
+[tesla_cloud.png](/assets/tesla_cloud.png)
+[chevy_cloud.png](/assets/chevy_cloud.png)
 
-The same first iteration is applied to the quotes related to Tesla.  GIVE THE WORDS
-2 WORD CLOUDS TODO : 1 WITH WORDS, 1 WITHOUT
+ In the case of Chevrolet, it is first worth noticing the word **"good"** is central. This could explain the higher VADER score presented earlier, as it constitutes a **general bias term**. Other central terms are **"race"**, **”track”** and **”teams”**, which picture Chevrolet as a brand invested in car racing (namely NASCAR). Several car models are identified as well. From this analysis, we can put the image of Chevrolet into words : a brand oriented towards racing and with a friendly face (“good” and “weekend”).
 
-DRAW CONCLUSION ON THE PROFILE OF THE COMPANIES
+On the other hand, Tesla seems more linked to business (‘people’, company’, ‘production’ , ‘stock’, etc) and innovation (‘think’, ‘electric”, ‘autopilot’ etc). The lexicon is more varied compared to Chevrolet, less one sided.  
 
 ### Name now one man
+ Now that we have a global picture of the topics related to each brand, the analysis is pushed further by reducing the batches of quotes taken into account, grouping them by year and month. This step allowed one to have a more precise view on which topics characterise the brands through time. Some words are frequent and appear uniformly throughout the months and constitute a kind of background noise. On the opposite, we can find specific terms which appear punctually in the timeline, thus indicating a special event occured. The following events have been detected :
+ 
+**Tesla**
+- February 2015 : Elon Musk's 'insane' call: Tesla worth $700 billion. Same market cap of Apple at that time
+- June to October 2015 : Hype around the production of the Model X and start of the production
+- January 2016 : Australia's first Tesla Powerwall has been installed
+- January 2017 :  the massive Gigafactory battery production plant started mass-producing battery cells
+- November - December 2019 :  Reveal of the Cybertruck
 
-Now we have an intuition of the topics related to each brand, the analysis is push further by reducing the batches of quotes, grouping them by year and month. This step, along with discarding the main words cited earlier, allowed to have a more precise view on which topics characterise the brands through time. Some words are frequent and appear uniformly throughout the months and constitute a kind of background noise. On the opposite, we can find specific terms which appear punctually in the timeline, thus indicating a special event occured. Topics detected are (GIVE DATES): 
-- Tesla
-  - Model X
-  - Cybertruck
-- Chevrolet
-  -  New camaro model 
-  -  New Silverado model (selected as keyword in the quote selection process)
-
+**Chevrolet**
+- December 2018-january 2019 : New Silverado model
+- November 2016 : MVP baseball player Zobrist wins a camaro
+- February 2018 : The Camaro ZL1 introduced in the Monster Energy NASCAR Cup Series. On February 18, 2018, Austin Dillon won the Daytona 500 in the ZL1's debut.
+- April 2020 : Team Carlin participates in the IndyCar iRacing Challenge with Chevrolet
+We now can select some event and analyse the evolution of the sentiment of people towards the event and the brand in time.
 
 
 ## What are they talking about ? 
@@ -72,7 +76,7 @@ Here are the main thing people are saying:
 
 ## Chevrolet
 
-For Chevrolet, we selected the release of the sixth generation Camara which took place in April 2018 and the release of the 2019 model of the Silverado. We took these two marketed models, because we want to try to make a comparison with Tesla models and therefore not race cars. 
+For Chevrolet, we selected the release of the sixth generation Camaro which took place in April 2018 and the release of the 2019 model of the Silverado. We took these two marketed models, because we want to try to make a comparison with Tesla models and therefore not race cars. 
 
 ### The 6th Edition Chervrolet Camaro
 
