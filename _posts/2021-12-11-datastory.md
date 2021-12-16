@@ -22,17 +22,15 @@ Now, to try and measure the evolution of the opinion on electric cars and therma
 
 The big advantage of words, is that they convey much emotions. Therefore from the quotes in the dataset, we can build a first overview of what image each brand has had in the past years by assessing the average sentiment in the quotes. After selecting a sample of quotes which share characteristic keywords (e.g. brand names, car models) and checking the uniqueness of each quote, we proceed to a Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionnary sEntiment Reasoning (VADER). In a nutshell, this algorithm associates values to words depending on their meaning and the emotion they convey, and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up, by a similar method that analyses the emotion **GIVE NAME** of the sentence and BERT, a sentiment analysis Deep Neural Network.
 
-Maitenant que nous avons sélectionné les quotes qui parlent de Chevrolet et de Tesla, calculé les sentiments qui en ressortent, il est de temps d'analyser nos résultats. Pour se faire nous allons dans un premier temps montrer la moyenne des sentiments par mois ainsi que le notre de quotes entre Janvier 2015 et Décembre 2020.  
+Now that we have selected the quotes that talk about Chevrolet and Tesla, and calculated the sentiments that emerge, it is time to analyze our results. To do so, we will first show the average and standard deviation of the sentiments per month as well as the number of quotes between January 2015 and December 2020.  
 
 {% include general_chevrolet.html %}
 
-On peut remarque que pour Chevrolet, le nombre de quotes varie mais surtout qu'en Janvier 2016, Novembre/Décembre 2016 et Janvier 2017 nous avons presque aucune quote. La moyenne des sentiments par mois et relativement élevée mais surtout très stable mis à part lorsque le nombre de quote est bas. Le troisième plot nous montre la standard déviation également par mois. Contrairement à ce qu'on aurait pû attendre, elle oscille beaucoup. 
+We can notice that for Chevrolet, the number of quotes varies, but especially that in January 2016, November/December 2016 and January 2017 we have almost no quotes. The average sentiment per month is relatively high, but mostly very stable except when the number of quotes is low. The third plot shows us the standard deviation also per month. Contrary to what one would expect, it oscillates a lot. 
 
 {% include general_tesla.html %}
 
-Maintenat pour Tesla, on voit qu'il y a aussi peut de quotes en début 2016 et fin 2016/début 2017. On pourrait penser que le dataset QuoteBank a peut être moins de données pour cette période. On remarque que contrairement à Chevrolet, le nombre de quotes augement considérablement après 2017. Nous avons aussi découvert que dans nos quotes selectionées, 24% sont des citations d'Elon Musk, le créateur de Tesla. Le score est en moyenne plus bas et beaucoup moins stable que celui de Chevrolet. On remarque finalement que la standard deviation est beaucoup plus stable dans les quotes de Tesla comparé à celle de Chevrolet.
-
-Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices.  
+Now for Tesla, we see that there are also few quotes in early 2016 and late 2016/early 2017. One would think that the QuoteBank dataset might have less data for this period. We notice that unlike Chevrolet, the number of quotes increases significantly after 2017. We also found that in our selected quotes, 24% are quotes from Elon Musk, the creator of Tesla. Now, a striking difference, is the average score that we observe over the years, being much lower for Tesla quotes. Now, this can be due to several factors: The quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, global controversies around Tesla due to its novelty and practices. We finally notice that the standard deviation is much more stable in Tesla's quotes compared to Chevrolet's.
 
 ## Topic Analysis
 
@@ -67,39 +65,44 @@ Now we have an intuition of the topics related to each brand, the analysis is pu
 
 ## What are they talking about ? 
 
-Now this is all fine and dandy, but during our intial topic analysis, something stood out that deserves attention: Who exactly is doing the talking ? Are the people talking about Tesla the same ones that talk about  where do everyone that's speaking coming from ? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a 100 year old company like Chevrolet. To accomplish this, a great ressource we can take advantage of if the information contained by the "occupation" field in the wikidata dumps. Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging we can find their occupation(s).
+Now this is all fine and dandy, but during our intial topic analysis, something stood out that deserves attention: Who exactly is doing the talking ? Are the people talking about Tesla the same ones that talk about  where do everyone that's speaking coming from ? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a 100 year old company like Chevrolet. To accomplish this, a great ressource we can take advantage of if the information contained by the "occupation" field in the wikidata dumps. Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging we can find their occupation(s).So we will focus on two events related to Tesla and two events related to Chevrolet. To do so, we made topic detection by grouping the sentences by month. To see if there was a difference in feelings between before, during and after an event we decided to use boxplots. Indeed, they allow us to summarize and visualize the distributions more easily. For the period we decided to take 20 days for each of them and for the during one, with the date of the event in the center. Since the number of quotes is lower in 2016 and 2017 we preferred to select events that are not in these years. 
 
-
-Maintenant que nous avons regardé en général, les sentiments qui ressortent des quotes, nous allons nous concentrer sur deux événements relié à Tesla et deux événements relié à Chevrolet. Pour se faire, nous avons fait du topic detection en regroupant les phrases par mois. Pour voir si une différence de sentiments avait lieu entre avant, pendant et après un événements nous avons décidé d'utiliser des boxplots. En effet, ils nous permettent de résumer et visualiser les distributions plus facilement. Pour la période nous avons décidé de prendre 20 jours pour chacune d'entre elles et pour celle pendant, avec la date de l'événement au centre. Vu que le nombre de quotes est plus bas en 2016 et en 2017 nous avons préféré selectionner des événements qui ne sont pas dans ces années.  
 
 Here are the main thing people are saying:
+
 ## Chevrolet
 
-Pour Chevrolet, nous avons sélectionnée la sortie de la sixème génération de la Camara qui a eu lieu en Avril 2018 et la sortie du modèle 2019 de la Silverado. Nous avons pris ces deux modèles commercialisé car nous voulons essayé de faire une comparaison avec des modèles Tesla et donc pas des voitures de courses. 
+For Chevrolet, we selected the release of the sixth generation Camara which took place in April 2018 and the release of the 2019 model of the Silverado. We took these two marketed models, because we want to try to make a comparison with Tesla models and therefore not race cars. 
 
-## The 6th Edition Chervrolet Camaro
+### The 6th Edition Chervrolet Camaro
 
 {% include chevrolet_camaro.html %}
-Pour ce premier événement, nous pouvons remarque que la moyenne des sentiments pendant l'événement est plus haute qu'avant ou après. On remarque cependant que sa variance est plus grande que la période avant et aussi qu'il y a un plus grand écart entre la moyenne et la médiane pendant l'événement. On pourrait interpreter cela avec le fait que peut être les sentiments étaient plus partagés durant l'événement. 
-## The Chevrolet Silverado
+For this first event, we can notice that the average of the feelings during the event is higher than before or after. However, we notice that its variance is greater than the period before and also that there is a greater gap between the mean and the median during the event. This could be interpreted as perhaps feelings were more mixed during the event. 
+
+### The Chevrolet Silverado
 
 {% include chevrolet_silverado.html %}
-La sortie de la Silverado en 2019 a des résultats différents. En effet on voit que la médiance augmente entre les trois périodes. La boxplot pour la période d'après est plus petit et surtout plus haute que les deux autres. On peut donc dire à travers ces résultats que les retours par rapport à la sortie du modèle sont assez positifs. 
+The release of the Silverado in 2019 has different results. Indeed we see that the median increases between the three periods. The boxplot for the next period is smaller and especially higher than the other two. We can therefore say through these results that the returns in relation to the output of the model are quite positive. 
 
-On remaque à travers ces deux événements que la moyenne reste proche des 0.5 et qu'on a plus de variation au niveau de la médiane ou de la taille des boxplots.
+We can see from these two events that the mean remains close to 0.5 and that there is more variation in the median or in the size of the boxplots.
+
 ## Tesla 
-Pour Tesla, nous avons choisi deux événements assez séparés. Le premier est la sortie du modèle X en Septembre 2015 et le deuxième est la présentation CyberTruck en Novembre 2019.
-## The Tesla Model X
+
+For Tesla, we chose two fairly separate events. The first is the release of the Model X in September 2015 and the second is the CyberTruck presentation in November 2019.
+
+### The Tesla Model X
 
 {% include tesla_model_x.html %}
-On remaque que la moyenne est plus basse que pour Chevrolet en générale. Les boxplots sont plus étroits mais on des maximums et minimums très espacés. On ne constate pas de différence significante entre les trois périodes. 
+We notice that the average is lower than for Chevrolet in general. The boxplots are narrower, but the maximums and minimums are far apart. There is no significant difference between the three periods. 
+
 ## The Cybertruck 
 
 {% include tesla_cyber.html %}
 
-Pour le dévoilement du CyberTruck, une fois de plus, les boxplots sont plus étroits et il la moyenne reste plus constante. 
+For the CyberTruck unveiling, once again, the boxplots are narrower and the average remains more constant. 
 
-Comparé à Chevrolet on peut constater plusieurs choses. La première est que la moyenne et la médiane pour Tesla sont toujours très proches. Les boxplots sont plus étroits et nous voyons beaucoup moins de différences entre les différentes périodes mais surtout que la moyenne est toujours plus basse que pour Chevrolet. Tesla est encore une marque de voiture très jeune et commence à s'imposer dans le milieu automobiles. Elon Musk. comme nous avons pû le voir joue aussi un rôle important dans l'image de Tesla. A cause de manque de quote, nous n'avons pas pû réduire le nombre de jour par période, ce qui selon nous serait plus intéressant pour analyser les sentiments, surtout avec Elon Musk qui fait souvent les nouvelles pour seulement une très petite période de temps. 
+Compared to Chevrolet we can see several things. The first is that the mean and median for Tesla are still very close. The boxplots are narrower and we see much less differences between the different periods, but above all the average is always lower than for Chevrolet. Tesla is still a very young car brand and is starting to establish itself in the automotive world. Elon Musk. As we have seen, he also plays an important role in Tesla's image. Due to lack of quote, we did not reduce the number of days per period, which we think would be more interesting to analyze the feelings, especially with Elon Musk who often makes the news for only a very small period of time. 
+
 
 ## Who is doing the talking ? 
 
