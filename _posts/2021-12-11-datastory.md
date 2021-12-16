@@ -4,9 +4,14 @@ title: The battle of electricity versus fossil fuels
 subtitle: Discover the analysis 
 ---
 
-Everyone not living in a cave for the whole twentieth century is a witness of global warming. Everyone knows that transportation of goods and of people is one of the causes of global warming, and is therefore a field with room for improvement. Naturally, technology is nowadays coming to the rescue, designing new cars that run on electricity, and not on conventional fuel. How efficient is this, and mostly, what effects does it have on people ? What does the population think of this new generation of vehicles, that seems to have gotten so much hype in the last decade ? 
+If you’ve connected to the Web at least once in the last few years, you know what is global warming and what’s awainting us. Among the many facets of this problem, a stake that gets the interest of many people is transportation, of goods and of people. Naturally, technology is nowadays alledgedly coming to the rescue, designing new cars that run on electricity, and not on conventional fuel. Now, whether or not it is a solution to our problems is beyond the scope of what we will see, but let’s assume it is, what exctly does the population think of this new generation of vehicles, that seems to have gotten so much hype in the last decade ? Is it already the population’s favorite, and how do peope feel about the alternative ? 
 
-To answer these questions, we have been provided with a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is _an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020._ This dataset will allow us to gather informations about what people have thought about the topic of electric cars versus thermic cars in a ten year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2015 up until now. 
+![electric_combustion](/assets/img/gas-vs-electric.png)
+
+<center>[Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf)
+To answer these questions, we have been provided with a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to the speakers who uttered them, extracted from 162 million English news articles published between 2008 and 2020. Although these quotes do not gather information about the “common people”, we know that people take interest and value the opinion of influential figures[^1], therefore the image conveyed in these quotes can give an idea of how people view theses different options. This dataset will allow us to gather informations about what people have thought about the topic of electric cars versus thermic cars in a ten year span. We study the evolution of the mindset of people in the United States about electric cars versus thermic cars, from 2015 up until now. </center>
+
+[^1]:  https://www.tandfonline.com/doi/full/10.1080/21670811.2018.1423625 
 
 {: .box-note}
 **U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
@@ -139,6 +144,7 @@ _Des ptits graphs, des ptits plots..._
 
 ## How things stand now
 _Des ptits graphs, des ptits plots..._
+
 
 ## In a nutshell...
 lé zaméricain y conduise dé gros voitur et muske il é maran mdr
