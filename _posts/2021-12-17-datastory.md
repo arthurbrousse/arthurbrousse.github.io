@@ -10,7 +10,7 @@ In the past few years, the topic of global warming has become central in public 
 ![electric_combustion](/assets/img/gas-vs-electric.png)
 
 
-To answer these questions, we studied a subset of a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to their respective speakers, mostly american ones, extracted from 162 million news articles (almost entirely in English) published between 2008 and 2020. Although these quotes do not gather information about the “common folk”, we know people take interest and value the opinion of influential figures[^1], therefore the sentiment conveyed in these quotes approached how people view these different options. This dataset will allow us to gather information about what people have thought about the topic of electric cars versus thermic cars in the past few years. We study the evolution of the mindset of people about electric cars against thermic cars, from 2015 up until now.
+To answer these questions, we studied a subset of a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to their respective speakers, mostly american ones, extracted from 162 million news articles (almost entirely in English) published between 2008 and 2020. Although these quotes do not gather information about the “common folk”, we know people take interest and value the opinion of influential figures [^1], therefore the sentiment conveyed in these quotes approached how people view these different options. This dataset will allow us to gather information about what people have thought about the topic of electric cars versus thermic cars in the past few years. We study the evolution of the mindset of people about electric cars against thermic cars, from 2015 up until now.
 
  
 [^1]:  [News in Social Media](https://www.tandfonline.com/doi/full/10.1080/21670811.2018.1423625) 
@@ -22,68 +22,71 @@ One of the first milestones of electric car development was this event:
 
 After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles by 2015. This illustrates a growing will to find and use alternatives to combustion engines, yet that innovation needs quite a starting boost. This is especially the case in a country that is well known for its relish of "conventional" internal combustion engine vehicles[^2] . But maybe the cliché of the big American truck[^3] has a ground truth somewhere...
 
-[^2] : https://www.youtube.com/watch?v=2Uneti_gkIw
+[^2] : [https://www.youtube.com/watch?v=2Uneti_gkIw](https://www.youtube.com/watch?v=2Uneti_gkIw)
 
-[^3] : https://www.youtube.com/watch?v=5XcW4nxqDmw
+[^3] : [https://www.youtube.com/watch?v=5XcW4nxqDmw](https://www.youtube.com/watch?v=5XcW4nxqDmw)
 
 
 ## How is everyone feeling? 
 
-To try and measure the evolution of the opinion on electric cars and thermal cars, a first-order approximation is to compare two leaders in the domain: Tesla and Chevrolet. Chevrolet as it is one of the most successful and best-selling car brands in the world[^4], especially in the US, and in average mid-range car prices, similar to Tesla.
+To try and measure the evolution of the opinion on electric cars and thermic cars, a first-order approximation is to compare two leaders in the domain: Tesla and Chevrolet. Chevrolet as it is one of the most successful and best-selling car brands in the world[^4], especially in the US, and in average mid-range car prices, similar to Tesla. The latter was picked due to its status of global leader in electric car manufacturing.
 
 [^4]: [CHEVROLET SALES FIGURES – US MARKET](https://www.goodcarbadcar.net/chevrolet-us-sales-figures/)
 
 This is where our quotes dataset comes into play. The big advantage of words is that they convey emotions. Therefore from the quotes, we can build a first overview of what image each company has had in the past years by assessing the average sentiment in the quotes. After selecting a sample of quotes that share characteristic keywords (e.g. brand names, car models) and checking the uniqueness of each quote, we proceed to a Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionary sEntiment Reasoning (VADER). In a nutshell, this algorithm associates values to words depending on their meaning and the emotion they convey and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up by a similar method, text2emotion, which analyses the emotion of the sentence, and BERT, a sentiment analysis Deep Neural Network.
 
-We have data spanning 5 years in total, between January 2015 and April 2020, so why not take advantage of it ? We look at both the number of quotes over time and the average sentiment score, with its corresponding standard deviation, of our quotes talking about Chevrolet and Tesla. The goal is to see if in this 5-year timespan the public opinion changed regarding either of these companies.
+We have data spanning 5 years in total, between January 2015 and April 2020, so why not take advantage of it ? We examine the number of quotes every month and assess the average sentiment score, along with standard deviation. The goal is to see if in this 5-year timespan, the public opinion changed regarding either of these companies.
 
 {% include general_chevrolet.html %}
 
-A piece of information that jumps to our eye in the chart above is how the number of quotes varies. The average sentiment per month is overall around 0.5, and is mostly very stable except when the number of quotes is low. The third plot shows us the standard deviation also per month. Contrary to what one would expect, it oscillates a lot. **SO WHAT**
+A piece of information that jumps to our eye in the chart above is how the number of quotes varies. The average sentiment per month is overall around 0.5, and is mostly very stable except when the number of quotes is low. This first observation suggests the overall opinion regarding Chevrolet is rather positive. This is expected from the status this company has on the american car market. The third plot shows us the standard deviation also per month. Notice it oscillates a lot, implying that these results should not be taken at face value.
 
-Before processing the quotes for Tesla, it is important to note that the quotes coming from its esteemed founder, Elon Musk, account for 24% of the selected quotes. Nonetheless, we decided his contribution was worth keeping, despite his bias in favor of Telsa, as we are looking at how what influential figures are saying.
+
+Before processing the quotes for Tesla, it is important to note that the quotes coming from its esteemed CEO, Elon Musk, account for 24% of the selected quotes. Nonetheless, we decided his contribution was worth keeping, despite his bias in favor of Telsa, as we are looking at what influential figures are saying.
 
 {% include general_tesla.html %}
 
-Now for Tesla, we notice the low count of quotes in early 2016 and late 2016/early 2017, which leads us to think that this is actually inherent to the Quotebank dataset. A striking difference is the average score that we observe over the years, being much lower for Tesla quotes. This can be due to several factors: the quality of the analysis and of the methods that might have more trouble analysing either one of the datasets, as well as global controversies around Tesla due to its novelty and practices. We finally notice that the standard deviation is much more stable in Tesla's quotes compared to Chevrolet's. **SO WHAT ?***
+As already noticed in the sample of quotes about Chevrolet, there is not a lot of quotes in early 2016 and late 2016/early 2017. This leads us to think this flaw could actually be inherent to the Quotebank dataset. A striking difference is the average score, much lower in the case of Tesla. There are several factors to account for. First on the technical side, we might reconsider the validity of the subset chosen for the analysis (number of quotes, themes tackled in the quotes) as well as the methods used, which could be more adapted to some datasets. On the qualitative side, there are global controversies around Tesla due to its novelty, disruptiveness, and the mediatic presence of Elon Musk.
 
-**EXPLAIN WHY THE RESULTS ARE NOT FOLICHON**
+The standard deviation presented for Tesla being on average larger than the calculated means, there is no general trend in the results obtained. The sentiment calculated in quotes about Tesla fluctuates largely, which illustrates the controversial character of the company.
+
 
 ## Topic Analysis
-After this basic overview of the general sentiment on each brand over the years, let us come back to our main concern: how are people's opinion on a brand influenced by events linked to said brand? This analysis requires selecting appropriate events and discussing them in a pertinent timeframe.
+After this basic overview of the general sentiment on each brand over the years, let us come back to our main concern: how are people's opinion on a company influenced by events linked to said company ? This analysis requires selecting appropriate events and discussing them in a pertinent timeframe.
  
-At first, the step of event selection was naively done by hand, reading through the history of each brand, and evaluating which events seemed like milestones and would easily show up in the quotes. However, this method can not lead to the most accurate results. Indeed, despite the rather huge size of the quotebanks dataset, it doesn't contain complete information about any event about any topic happening in the world. This implies that the event that we manually selected might be missing.
- 
-Another approach that is more tailored to the data at disposal is topic detection. With its barbaric name, the "Latent Dirichlet Allocation" (LDA) algorithm identifies which words in a batch of quotes are the most likely to accurately represent the topics covered by these quotes. 
+At first, the step of event selection was naively done by hand, reading through the history of each brand, and evaluating which events seemed like milestones and would easily show up in the quotes. However, this method can not lead to the most accurate results. Indeed, despite the rather huge size of the quotebanks dataset, it doesn't contain complete information about every event happening in the world. This implies that the events that we manually selected might be missing.
+
+Another approach that is more tailored to the data at disposal is topic detection. With its barbaric name, the "Latent Dirichlet Allocation" (LDA) algorithm identifies keywords;  which words in a batch of quotes are the most likely to accurately represent the topics covered by these quotes. 
  
 ### Words and Company Profile
-A first iteration taking all the quotes into account for each brand revealed some predominant words. The wordclouds representing the words selected for topic analysis over the years are presented below: 
+A first iteration taking all the quotes into account for each comany revealed some predominant words. The wordclouds representing the words selected for topic analysis over the years are presented below: 
 
 ![image](/assets/tesla_cloud.png) | ![image](/assets/chevy_cloud.png)
 - | -
 Cloud of Words from Tesla quotes | Cloud of words from Chevrolet quotes
 
- In the case of Chevrolet, it is first worth noticing the word **"good"** is central. This could explain the higher VADER score presented earlier, as it constitutes a **general bias term**. Other central terms are **"race"**, **”track”** and **”teams”**, which picture Chevrolet as a brand invested in car racing (e.g. NASCAR). Several car models are identified as well. From this analysis, we can put the image of Chevrolet into words : a brand oriented towards racing and with a friendly facade (“good” and “weekend”).
+ In the case of Chevrolet, it is first worth noticing the word **"good"** is central. This could explain the higher VADER score presented earlier, as it constitutes a **general bias term**. Other central terms are **"race"**, **”track”** and **”teams”**, which picture Chevrolet as a company invested in car racing (e.g. NASCAR). Several car models are identified as well. From this analysis, we can put the image of Chevrolet into words : a sympathetic company (“good” and “weekend”) with a special liking for racing.
 
-On the other hand, Tesla seems more linked to business (‘people’, company’, ‘production’, ‘stock’, etc) and innovation (‘think’, ‘electric”, ‘autopilot’ etc). The lexicon is more varied compared to Chevrolet, less one-sided. 
+On the other hand, Tesla seems more linked to business (‘people’, company’, ‘production’, ‘stock’, etc.) and innovation (‘think’, ‘electric”, ‘autopilot’, etc.). The lexicon is more varied compared to Chevrolet, less one-sided. 
 
-The quotes validate what we could have expected: these two companies are not playing the same game. Chevrolet is a well-established corporation, manufacturing well-known models and taking part in classic championships. On the other hand, we understand Tesla has a lot to prove to deserve its place in the car industry. Despite this, the company is more focused on innovation and research and advertises these efforts.
+The quotes validate what we could have expected: these two companies are not playing the same game. Chevrolet is a well-established corporation, manufacturing well-known models and taking part in famous racing championships. On the other hand, we understand Tesla has a lot to prove to deserve its place in the car industry. Despite this, the company is more focused on innovation and research and advertises these efforts.
 
 ### Name now one man
-Now that we have a global picture of the topics related to each brand, the analysis is pushed further by reducing the batches of quotes taken into account, grouping them by year and month. This step allows one to have a more precise view on which topics characterise the companies through time. Some words are frequent and appear uniformly throughout the months and constitute a kind of background noise. On the opposite, some specific terms appear punctually in the timeline, thus indicating a special event occurred. The following events have been detected thanks to LDA :
+Now that we have a global picture of the topics related to each company, the analysis is pushed further by reducing the batches of quotes taken into account, grouping them by year and month. This step allows one to have a more precise view on which topics characterise the companies through time. Some words are frequent and appear uniformly throughout the months, and constitute a kind of background noise. On the other hand, some specific terms appear punctually in the timeline, thus indicating a special event occurred. The following events have been detected thanks to LDA :
  
 **Tesla**
-- February 2015: Elon Musk's 'insane' call: Tesla worth $700 billion. Same market cap of Apple at that time
-- June to October 2015: Hype around the production of the Model X and start of the production
-- January 2016: Australia's first Tesla Powerwall has been installed
-- January 2017:  the massive Gigafactory battery production plant started mass-producing battery cells
-- November - December 2019:  Reveal of the Cybertruck
+- February 2015: Elon Musk's 'insane' call: Tesla worth $700 billion by 2025 (same market cap of Apple as of 2015).
+- June to October 2015: Hype around the production of the Model X and start of the production.
+- January 2016: Australia's first Tesla Powerwall has been installed.
+- January 2017:  The massive Gigafactory battery production plant started mass-producing battery cells.
+- November - December 2019:  Reveal of the Cybertruck.
 
 **Chevrolet**
-- December 2018-January 2019 : New Silverado model
-- November 2016: MVP baseball player Zobrist wins a Camaro
+- December 2018-January 2019 : New Silverado model.
+- November 2016: MVP baseball player Zobrist wins a Camaro.
 - February 2018: The Camaro ZL1 was introduced in the Monster Energy NASCAR Cup Series. On February 18, 2018, Austin Dillon won the Daytona 500 in the ZL1's debut.
-- April 2020: Team Carlin participates in the IndyCar iRacing Challenge with Chevrolet
+- April 2020: Team Carlin participates in the IndyCar iRacing Challenge with Chevrolet.
+
 We can now select some events and analyse the evolution of the sentiment of people towards the event and the company in time.
 
 
@@ -102,7 +105,7 @@ For this first event, we can notice that the average of the feelings during the 
 #### The Chevrolet Silverado
 
 {% include chevrolet_silverado.html %}
-The release of the Silverado in 2019 has different results. With increasing median sentiment, we could assume the release was welcomed by the general public. 
+The release of the Silverado in 2019 has different results. With increasing median sentiment and less spread out boxplots, we could assume the release of this model was in majority welcomed by the interested public. This supports the claim that thermic cars are still very much appreciated in the U.S despite the well established knowledge of the implications of buying new, high fuel consumption (16l/100km), cars.
 
 ### Tesla 
 
@@ -111,16 +114,13 @@ For Tesla, we chose two fairly separated events. The first is the release of the
 ### The Tesla Model X
 
 {% include tesla_model_x.html %}
-We notice that the average is lower than for Chevrolet in general. The boxplots are narrower, but the maximums and minimums are far apart. There is no significant difference between the three periods. 
+We notice that the average is lower than for Chevrolet in general. The boxplots are narrower, but the maximums and minimums are far apart. There is no significant difference between the three periods. Thus, new releases of Tesla seem not to have any impact on the interested public's view on the company. This statement supports the claim that the general feeling on electric cars is still mixed. We need to analyse another event to verify that conclusion.
 
 ## The Cybertruck 
 
 {% include tesla_cyber.html %}
 
-For the CyberTruck reveal, once again, the boxplots are narrower and the average remains more constant. 
-
-**TO CHANGE**
-Compared to Chevrolet we can see several things. The first is that the mean and median for Tesla are still very close. The boxplots are narrower and we see much fewer differences between the different periods, but above all the average is always lower than for Chevrolet. Tesla is still a very young car brand and is starting to establish itself in the automotive world. Elon Musk. As we have seen, he also plays an important role in Tesla's image. Due to lack of quote, we did not reduce the number of days per period, which we think would be more interesting to analyze the feelings, especially with Elon Musk who often makes the news for only a very small period of time. 
+For the CyberTruck reveal, once again, the boxplots are narrower and the average remains quite constant overall, although there is a minor drop during the event. This drop could be related to the [failure of the window chock resistance test](https://www.youtube.com/watch?v=LMWwImDX3ks) during the reveal, which caused a drop by 6% in Tesla's stock value. 
 
 
 ## Who is doing the talking ? 
