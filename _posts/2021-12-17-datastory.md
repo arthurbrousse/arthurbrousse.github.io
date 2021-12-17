@@ -130,7 +130,7 @@ Now, this is all fine and dandy, but during our initial topic analysis, somethin
 
 Clearly, we can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: the latter is much more ingrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is branded in people's minds as a novel technology that still needs to prove itself, which actually has been shown in recent surveys [^5]. This comforts our conclusions drawn from the topic analysis.
 
-[^5]: https://www.jdpower.com/business/press-releases/2020-q1-mobility-confidence-index-study-fueled-surveymonkey-audience
+[^5]: [Reality check of public sentiment on electric cars](https://www.jdpower.com/business/press-releases/2020-q1-mobility-confidence-index-study-fueled-surveymonkey-audience)
 
 We have an example of the power of large scale data and what it can tell us. It is quite known now, that people tend to accommodate their behavior and opinion to the ones of recognized or influential people. 
 - Telsa, while still being quite a new company with mixed feelings about it, has an aura of innovation and novelty around it which might sound promising for its future.
