@@ -97,9 +97,9 @@ We present 4 events of interest, corresponding to 4 car releases or reveals. Sin
 ### Chevrolet
 For Chevrolet, we selected the release of the sixth-generation Camaro which took place in April 2018 and the release of the 2019 model of the Silverado. We took these two marketed models because we want to try to make a comparison with Tesla models and therefore not race cars. 
 
-#### The 6th Edition Chevrolet Camaro
+#### Chevrolet Silverado in collaboration with HSV
 
-{% include chevrolet_camaro.html %}
+{% include chevrolet_hsv.html %}
 For this first event, we can notice that the average of the feelings during the event is higher than before or after. However, we notice that its variance is greater than the period before and also that there is a greater gap between the mean and the median during the event. This could be interpreted as perhaps feelings were more mixed during the event. 
 
 #### The Chevrolet Silverado
