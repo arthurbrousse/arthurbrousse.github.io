@@ -5,7 +5,7 @@ subtitle: Discover the analysis
 thumbnail-img: /assets/img/gas-vs-electric.png
 ---
 
-In the past few years, the topic of global warming has become central in public debate, raising political, social and economical questions. Among the many facets of this problem, a stake that gets the interest of many is transportation, of goods and people. Naturally, technology is allegedly coming to the rescue, with companies designing new cars running on electricity. Whether or not this is a solution to our problems is beyond the scope of what we will see, but let’s assume it is. What exactly does the general public think of this new generation of vehicles, that seems to have gotten so much hype in the last decade? Did the general opinion change, and if so why? 
+In the past few years, the topic of global warming has become central in public debate, raising political, social and economical questions. Among the many facets of this problem, a stake that gets the interest of many is transportation, of goods and people. Naturally, technology is allegedly coming to the rescue, with companies designing new cars running on electricity. Whether or not this is a solution to our problems is beyond the scope of what we will see, but let’s assume it is. What exactly does the general public think of this new generation of vehicles, that seems to have gotten so much hype in the last decade? Did the general opinion change depending on the different events that occured around these two technolgies, and if so why? 
 
 ![electric_combustion](/assets/img/gas-vs-electric.png)
 
@@ -53,8 +53,6 @@ The standard deviation presented for Tesla being on average larger than the calc
 
 ## Topic Analysis
 After this basic overview of the general sentiment on each brand over the years, let us come back to our main concern: how are people's opinion on a company influenced by events linked to said company ? This analysis requires selecting appropriate events and discussing them in a pertinent timeframe.
- 
-At first, the step of event selection was naively done by hand, reading through the history of each brand, and evaluating which events seemed like milestones and would easily show up in the quotes. However, this method can not lead to the most accurate results. Indeed, despite the rather huge size of the quotebanks dataset, it doesn't contain complete information about every event happening in the world. This implies that the events that we manually selected might be missing.
 
 Another approach that is more tailored to the data at disposal is topic detection. With its barbaric name, the "Latent Dirichlet Allocation" (LDA) algorithm identifies keywords;  which words in a batch of quotes are the most likely to accurately represent the topics covered by these quotes. 
  
@@ -96,12 +94,12 @@ We can now select some events and analyse the evolution of the sentiment of peop
 We present 4 events of interest, corresponding to 4 car releases or reveals. Since the number of quotes is lower in 2016 and 2017, no event in this period is selected. To check the evolution of the general sentiment, these events are studied in a 60 days timeframe.
 
 ### Chevrolet
-For Chevrolet, we selected the release of the sixth-generation Camaro which took place in April 2018 and the release of the 2019 model of the Silverado. We took these two marketed models because we want to try to make a comparison with Tesla models and therefore not race cars. 
+For Chevrolet, we selected the release of the release of the Chevrolet Silverado, constructed in cooperation with Holden Special Vehicles, and its later interation of the 2019 model. We took these two marketed models because we want to try to make a comparison with Tesla models, therefore not race cars. 
 
 #### Chevrolet Silverado in collaboration with HSV
 
 {% include chevrolet_hsv.html %}
-For this first event, we can notice that the average of the feelings during the event is higher than before or after. The reduced span of the boxplot during the event suggest a general enthusiasm for the release. This enthusiasm is short-lived as the distribution come back to the initial state. The analysis of this event supports the claim that thermic cars are still very much appreciated in the U.S despite the well established knowledge of the implications of buying new, high fuel consumption (16l/100km), cars.
+For this first event, we can notice that the average of the feelings during the event is higher than before or after. The reduced span of the boxplot during the event suggest a general enthusiasm for the release. This enthusiasm is short-lived as the distribution come back to the initial state. The analysis of this event supports the claim that thermic cars are still very much appreciated despite the well established knowledge of the implications of buying new, high fuel consumption (16l/100km), cars.
 
 #### The Chevrolet Silverado
 
@@ -125,7 +123,7 @@ For the CyberTruck reveal, once again, the boxplots are narrower and the average
 
 
 ## Who is doing the talking ? 
-Now, this is all fine and dandy, but during our initial topic analysis, something stood out that deserves attention: Who exactly is doing the talking? Are the people talking about Tesla the same ones that talk about Chevrolet? Where does everyone that's speaking come from? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a 100-year-old company like Chevrolet. To accomplish this, a great resource we can take advantage of is the information contained by the "occupation" field in the "wiki data" dumps (datasets fetched from Wikipedia's database). Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging, we can find their occupation(s). So we will focus on two events related to Tesla and two events related to Chevrolet. 
+Now, this is all fine and dandy, but during our initial topic analysis, something stood out that deserves attention: Who exactly is doing the talking? Are the people talking about Tesla the same ones that talk about Chevrolet? Where does everyone that's speaking come from? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a 100-year-old company like Chevrolet. To accomplish this, a great resource we can take advantage of is the information contained by the "occupation" field in the "wiki data" dumps (datasets fetched from Wikipedia's database). Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging, we can find their occupation(s).
 
 {% include piechart_occupation.html %}
 
@@ -138,7 +136,3 @@ We have an example of the power of large scale data and what it can tell us. It 
 - Chevrolet on the other hand, has the advantage of being associated with race cars and the sentiment of freedom and adrenalin. 
 
 Interestingly enough we found in the end very few mentions of the environmental stakes that lie in this discussion. Once again there might be several factors underlying this, maybe because this got even more launched at the front of the stage with the worldwide halt caused by Coronavirus which gave everyone time to reflect on how much screwed we actually were. Do the mode of transportation we take have an impact on this fight? Most likely, but our analysis with Quotebank tells us that it is definitely not at the heart of what has been extracted. 
-
-## An overview of the opinion
-
-Thanks to the Quotebank dataset, we were able to extract much information
