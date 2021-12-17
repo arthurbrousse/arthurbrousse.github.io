@@ -2,6 +2,7 @@
 layout: post
 title: The battle of electricity versus fossil fuels
 subtitle: Discover the analysis 
+thumbnail-img: /assets/img/gas-vs-electric.png
 ---
 
 In the past few years, the topic of global warming has become central in public debate, raising political, social and economical questions. Among the many facets of this problem, a stake that gets the interest of many is transportation, of goods and people. Naturally, technology is allegedly coming to the rescue, with companies designing new cars running on electricity. Whether or not this is a solution to our problems is beyond the scope of what we will see, but let’s assume it is, what exactly does the general public think of this new generation of vehicles, that seems to have gotten so much hype in the last decade? Did the general opinion change, and if so why? 
