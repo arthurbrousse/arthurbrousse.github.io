@@ -162,5 +162,5 @@ We have an example of the power of large scale data and what it can tell us. It 
 - Chevrolet on the other hand, has the advantage of being associated with race cars and the sentiment of freedom and adrenalin. 
 {: .text-justify}
 
-Interestingly enough we found in the end very few mentions of the environmental stakes that lie in this discussion. Once again there might be several factors underlying this, maybe because this got even more launched at the front of the stage with the worldwide halt caused by Coronavirus which gave everyone time to reflect on how much screwed we were. Do the mode of transportation we take have an impact on this fight? Most likely, but our analysis with Quotebank tells us that it is definitely not at the heart of what has been extracted. 
+Interestingly enough, we found in the end very few mentions of the environmental stakes that should lie in this discussion. Once again, there might be several factors underlying this, maybe because this got even more launched at the front of the stage with the worldwide halt caused by the coronavirus pandemic, which gave everyone time to reflect on how serious this matter is. Do the modes of transportation we take have an impact on this fight? Most likely, but our analysis with Quotebank tells us that it is definitely not at the heart of what has been extracted. 
 {: .text-justify}
