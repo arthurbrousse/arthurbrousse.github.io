@@ -84,6 +84,7 @@ Now that we have a global picture of the topics related to each company, the ana
 **Chevrolet**
 - December 2018-January 2019 : New Silverado model.
 - November 2016: MVP baseball player Zobrist wins a Camaro.
+- December 2017: HSV releases a new model of modified Chevrolet Silverado.
 - February 2018: The Camaro ZL1 was introduced in the Monster Energy NASCAR Cup Series. On February 18, 2018, Austin Dillon won the Daytona 500 in the ZL1's debut.
 - April 2020: Team Carlin participates in the IndyCar iRacing Challenge with Chevrolet.
 
@@ -100,12 +101,12 @@ For Chevrolet, we selected the release of the sixth-generation Camaro which took
 #### Chevrolet Silverado in collaboration with HSV
 
 {% include chevrolet_hsv.html %}
-For this first event, we can notice that the average of the feelings during the event is higher than before or after. However, we notice that its variance is greater than the period before and also that there is a greater gap between the mean and the median during the event. This could be interpreted as perhaps feelings were more mixed during the event. 
+For this first event, we can notice that the average of the feelings during the event is higher than before or after. The reduced span of the boxplot during the event suggest a general enthusiasm for the release. This enthusiasm is short-lived as the distribution come back to the initial state. The analysis of this event supports the claim that thermic cars are still very much appreciated in the U.S despite the well established knowledge of the implications of buying new, high fuel consumption (16l/100km), cars.
 
 #### The Chevrolet Silverado
 
 {% include chevrolet_silverado.html %}
-The release of the Silverado in 2019 has different results. With increasing median sentiment and less spread out boxplots, we could assume the release of this model was in majority welcomed by the interested public. This supports the claim that thermic cars are still very much appreciated in the U.S despite the well established knowledge of the implications of buying new, high fuel consumption (16l/100km), cars.
+The release of the Silverado in 2019 has slightly different results. However, we still witness an increase in median and shortening of the sentiment distribution, which again suggests that the release of this model was in majority welcomed by the interested public.
 
 ### Tesla 
 
