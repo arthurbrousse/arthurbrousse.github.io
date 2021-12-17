@@ -69,7 +69,7 @@ On the other hand, Tesla seems more linked to business (‘people’, company’
 
 The quotes validate what we could have expected: these two companies are not playing the same game. Chevrolet is a well-established corporation, manufacturing well-known models and taking part in famous racing championships. On the other hand, we understand Tesla has a lot to prove to deserve its place in the car industry. Despite this, the company is more focused on innovation and research and advertises these efforts.
 
-### Name now one man
+## Name now one man
 Now that we have a global picture of the topics related to each company, the analysis is pushed further by reducing the batches of quotes taken into account, grouping them by year and month. This step allows one to have a more precise view on which topics characterise the companies through time. Some words are frequent and appear uniformly throughout the months, and constitute a kind of background noise. On the other hand, some specific terms appear punctually in the timeline, thus indicating a special event occurred. The following events have been detected thanks to LDA :
  
 **Tesla**
@@ -110,12 +110,12 @@ The release of the Silverado in 2019 has slightly different results. However, we
 
 For Tesla, we chose two fairly separated events. The first is the release of the Model X in September 2015 and the second is the CyberTruck presentation in November 2019.
 
-### The Tesla Model X
+#### The Tesla Model X
 
 {% include tesla_model_x.html %}
 We notice that the average is lower than for Chevrolet in general. The boxplots are narrower, but the maximums and minimums are far apart. There is no significant difference between the three periods. Thus, new releases of Tesla seem not to have any impact on the interested public's view on the company. This statement supports the claim that the general feeling on electric cars is still mixed. We need to analyse another event to verify that conclusion.
 
-## The Cybertruck 
+#### The Cybertruck 
 
 {% include tesla_cyber.html %}
 
@@ -131,6 +131,7 @@ We can see how different the public talking about Tesla is from the one talking 
 
 [^5]: [Reality check of public sentiment on electric cars](https://www.jdpower.com/business/press-releases/2020-q1-mobility-confidence-index-study-fueled-surveymonkey-audience)
 
+## To wrap it up...
 We have an example of the power of large scale data and what it can tell us. It is quite known now, that people tend to accommodate their behavior and opinion to the ones of recognized or influential people. 
 - Telsa, while still being quite a new company with mixed feelings about it, has an aura of innovation and novelty around it which might sound promising for its future.
 - Chevrolet on the other hand, has the advantage of being associated with race cars and the sentiment of freedom and adrenalin. 
