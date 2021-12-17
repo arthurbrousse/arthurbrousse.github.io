@@ -1,28 +1,29 @@
 ---
 layout: post
-title: The battle of electricity versus fossil fuels
+title: Electric or thermic, what's the dynamic ? 
 subtitle: Discover the analysis 
 thumbnail-img: /assets/img/gas-vs-electric.png
 ---
 
-In the past few years, the topic of global warming has become central in public debate, raising political, social and economical questions. Among the many facets of this problem, a stake that gets the interest of many is transportation, of goods and people. Naturally, technology is allegedly coming to the rescue, with companies designing new cars running on electricity. Whether or not this is a solution to our problems is beyond the scope of what we will see, but let’s assume it is, what exactly does the general public think of this new generation of vehicles, that seems to have gotten so much hype in the last decade? Did the general opinion change, and if so why? 
+In the past few years, the topic of global warming has become central in public debate, raising political, social and economical questions. Among the many facets of this problem, a stake that gets the interest of many is transportation, of goods and people. Naturally, technology is allegedly coming to the rescue, with companies designing new cars running on electricity. Whether or not this is a solution to our problems is beyond the scope of what we will see, but let’s assume it is. What exactly does the general public think of this new generation of vehicles, that seems to have gotten so much hype in the last decade? Did the general opinion change, and if so why? 
 
 ![electric_combustion](/assets/img/gas-vs-electric.png)
 
 
-To answer these questions, we studied a subset of a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to their respective speakers, mostly american ones, extracted from 162 million news articles (almost entirely in English) published between 2008 and 2020. Although these quotes do not gather information about the “common folk”, we know people take interest and value the opinion of influential figures[^1], therefore the sentiment conveyed in these quotes approached how people view these different options. This dataset will allow us to gather information about what people have thought about the topic of electric cars versus thermic cars in a ten-year span. We study the evolution of the mindset of people about electric cars against thermic cars, from 2015 up until now.
+To answer these questions, we studied a subset of a dataset named [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf), which is an open corpus of 178 million quotations attributed to their respective speakers, mostly american ones, extracted from 162 million news articles (almost entirely in English) published between 2008 and 2020. Although these quotes do not gather information about the “common folk”, we know people take interest and value the opinion of influential figures[^1], therefore the sentiment conveyed in these quotes approached how people view these different options. This dataset will allow us to gather information about what people have thought about the topic of electric cars versus thermic cars in the past few years. We study the evolution of the mindset of people about electric cars against thermic cars, from 2015 up until now.
 
  
-[^1]:  https://www.tandfonline.com/doi/full/10.1080/21670811.2018.1423625 
+[^1]:  [News in Social Media](https://www.tandfonline.com/doi/full/10.1080/21670811.2018.1423625) 
 
 One of the first milestones of electric car development was this event:
 
 {: .box-note}
 **U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
 
-After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles by 2015. This illustrates a growing will to find and use alternatives to combustion engines, yet that innovation needs quite a starting boost, especially in this case in a country that is well known for its relish of "conventional" internal combustion engine vehicles[^2] . But maybe the cliché of the big American truck[^3] has a ground truth somewhere...
+After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles by 2015. This illustrates a growing will to find and use alternatives to combustion engines, yet that innovation needs quite a starting boost. This is especially the case in a country that is well known for its relish of "conventional" internal combustion engine vehicles[^2] . But maybe the cliché of the big American truck[^3] has a ground truth somewhere...
 
 [^2] : https://www.youtube.com/watch?v=2Uneti_gkIw
+
 [^3] : https://www.youtube.com/watch?v=5XcW4nxqDmw
 
 
@@ -30,7 +31,7 @@ After taking this decision, which was partly in reaction to the price of the gal
 
 To try and measure the evolution of the opinion on electric cars and thermal cars, a first-order approximation is to compare two leaders in the domain: Tesla and Chevrolet. Chevrolet as it is one of the most successful and best-selling car brands in the world[^4], especially in the US, and in average mid-range car prices, similar to Tesla.
 
-[^4]: https://www.goodcarbadcar.net/chevrolet-us-sales-figures/
+[^4]: [CHEVROLET SALES FIGURES – US MARKET](https://www.goodcarbadcar.net/chevrolet-us-sales-figures/)
 
 This is where our quotes dataset comes into play. The big advantage of words is that they convey emotions. Therefore from the quotes, we can build a first overview of what image each company has had in the past years by assessing the average sentiment in the quotes. After selecting a sample of quotes that share characteristic keywords (e.g. brand names, car models) and checking the uniqueness of each quote, we proceed to a Sentiment Analysis, via a lexicon-based algorithm called Valence Aware Dictionary sEntiment Reasoning (VADER). In a nutshell, this algorithm associates values to words depending on their meaning and the emotion they convey and uses them to compute a score that corresponds to the overall "positiveness" of the sentence. The analysis is also backed up by a similar method, text2emotion, which analyses the emotion of the sentence, and BERT, a sentiment analysis Deep Neural Network.
 
