@@ -20,11 +20,11 @@ One of the first milestones of electric car development was this event:
 {: .box-note}
 **U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next Generation Electric Vehicles", _March 19, 2009_
 
-After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles by 2015. This illustrates a growing will to find and use alternatives to combustion engines, yet that innovation needs quite a starting boost. This is especially the case in a country that is well known for its relish of "conventional" internal combustion engine vehicles[^2] . But maybe the cliché of the big American truck[^3] has a ground truth somewhere...
+After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles by 2015. This illustrates a growing will to find and use alternatives to combustion engines, yet that innovation needs quite a starting boost. This is especially the case in a country that is well known for its relish of "conventional" internal combustion engine vehicles [^2]. But surely the cliché of the big American truck has a ground truth somewhere [^3]...
 
-[^2] : [https://www.youtube.com/watch?v=2Uneti_gkIw](https://www.youtube.com/watch?v=2Uneti_gkIw)
+[^2]: [Old school - new school drag racing](https://www.youtube.com/watch?v=2Uneti_gkIw)
 
-[^3] : [https://www.youtube.com/watch?v=5XcW4nxqDmw](https://www.youtube.com/watch?v=5XcW4nxqDmw)
+[^3]: [Talking about the cliché](https://www.youtube.com/watch?v=5XcW4nxqDmw)
 
 
 ## How is everyone feeling? 
