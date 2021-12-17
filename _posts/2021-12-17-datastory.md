@@ -22,7 +22,7 @@ One of the first milestones of electric car development was this event:
 {: .box-note}
 **U.S. Department of Energy :** "President Obama Announces $2.4 Billion in Funding to Support Next-Generation Electric Vehicles", _March 19, 2009_
 
-After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles by 2015. This illustrates a growing will to find and use alternatives to combustion engines, yet that innovation needs quite a starting boost. This is especially the case in a country that is well known for its relish of "conventional" internal combustion engine vehicles [^2]. But surely the cliché of the big American truck has a ground truth somewhere... [^3]
+After taking this decision, which was partly in reaction to the price of the gallon of oil averaging 4$, President Obama set the goal for the U.S. to be the first country to reach one million electric vehicles by 2015. This illustrates a growing will to find and use alternatives to combustion engines, yet that innovation needs quite a starting boost. This is especially the case in a country that is well known for its relish of "conventional" internal combustion engine vehicles.[^2] But surely the cliché of the big American truck has a ground truth somewhere... [^3]
 {: .text-justify}
 
 [^2]: [Old school - new school drag racing](https://www.youtube.com/watch?v=2Uneti_gkIw)
@@ -155,7 +155,7 @@ We can see how different the public talking about Tesla is from the one talking 
 [^5]: [Reality check of public sentiment on electric cars](https://www.jdpower.com/business/press-releases/2020-q1-mobility-confidence-index-study-fueled-surveymonkey-audience)
 
 ## To wrap it up...
-We have an example of the power of large scale data and what it can tell us. It is quite known now, that people tend to accommodate their behavior and opinion to the ones of recognized or influential people. 
+We have an example of the power of large scale data and what it can tell us. It is quite known now that people tend to accommodate their behavior and opinion to the ones of recognized or influential people. 
 - Telsa, while still being quite a new company with mixed feelings about it, has an aura of innovation and novelty around it which might sound promising for its future.
 - Chevrolet on the other hand, has the advantage of being associated with race cars and the sentiment of freedom and adrenalin. 
 {: .text-justify}
