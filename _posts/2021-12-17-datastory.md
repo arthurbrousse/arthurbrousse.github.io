@@ -140,8 +140,10 @@ We notice that the average is lower than for Chevrolet in general. The boxplots 
 
 {% include tesla_cyber.html %}
 
-For the CyberTruck reveal, once again, the boxplots are narrower and the average remains quite constant overall, although there is a minor drop during the event. This drop could be related to the [failure of the window chock resistance test](https://www.youtube.com/watch?v=LMWwImDX3ks) during the reveal, which caused a drop by 6% in Tesla's stock value. 
+For the CyberTruck reveal, once again, the boxplots are narrower and the average remains quite constant overall, although there is a minor drop during the event. This drop could be related to the [failure of the window chock resistance test](https://www.youtube.com/watch?v=LMWwImDX3ks) during the reveal, which caused a drop by 6% in Tesla's stock value.[^5] 
 {: .text-justify}
+
+[^5]: [Tesla stock down by 6 points](https://electrek.co/2019/11/22/tesla-tsla-stock-down-electric-pickup-unveiling-market-missing-point/)
 
 ## Who is doing the talking? 
 Now, this is all fine and dandy, but during our initial topic analysis, something stood out that deserves attention: Who exactly is doing the talking? Are the people talking about Tesla the same ones that talk about Chevrolet? Where does everyone that's speaking come from? Tesla being a highly up and coming company with a mindset of innovation, we might have very different classes of people talking about it compared to a 100-year-old company like Chevrolet. To accomplish this, a great resource we can take advantage of is the information contained by the "occupation" field in the "wiki data" dumps (datasets fetched from Wikipedia's database). Indeed, we have the speakers who uttered the quotes, and therefore, with a little bit of digging, we can find their occupation(s).
@@ -149,10 +151,10 @@ Now, this is all fine and dandy, but during our initial topic analysis, somethin
 
 {% include piechart_occupation.html %}
 
-We can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: the latter is much more ingrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is branded in people's minds as a novel technology that still needs to prove itself, which has been shown in recent surveys [^5]. This comforts our conclusions drawn from the topic analysis.
+We can see how different the public talking about Tesla is from the one talking about Chevrolet, which reveals an important component of the comparison between electric and thermic vehicles: the latter is much more ingrained in the collective mindset, with a whole world built around it like race cars, whose name is thus associated to the cars people buy. While Tesla is gaining in popularity these last few years, it still is branded in people's minds as a novel technology that still needs to prove itself, which has been shown in recent surveys. [^6] This comforts our conclusions drawn from the topic analysis.
 {: .text-justify}
 
-[^5]: [Reality check of public sentiment on electric cars](https://www.jdpower.com/business/press-releases/2020-q1-mobility-confidence-index-study-fueled-surveymonkey-audience)
+[^6]: [Reality check of public sentiment on electric cars](https://www.jdpower.com/business/press-releases/2020-q1-mobility-confidence-index-study-fueled-surveymonkey-audience)
 
 ## To wrap it up...
 We have an example of the power of large scale data and what it can tell us. It is quite known now that people tend to accommodate their behavior and opinion to the ones of recognized or influential people. 
